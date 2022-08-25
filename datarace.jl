@@ -6,7 +6,7 @@ function suma_desprotegida(n)
         push!(arr, i)
         println("Soy el hilo: ", Threads.threadid(), " metiendo ", i)                    
     end
-    print(arr)
+    println(arr)
     return sum(arr)
 end
 
@@ -19,6 +19,6 @@ function suma_protegida(n)
             println("Soy el hilo: ", Threads.threadid(), " metiendo ", i)            
         end
     end
-    print(arr)
+    println(arr)
     return sum(arr)
 end
